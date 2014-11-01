@@ -17,7 +17,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 			});
 			article.$save(function(response) {
 				$location.path('articles/' + response._id);
-
+				$scope.comments = '';
 				$scope.proposalName = '';
 				$scope.sponsorName = '';
 				$scope.govLevel = '';
