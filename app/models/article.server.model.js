@@ -32,6 +32,18 @@ var ArticleSchema = new Schema({
 		trim: true,
 		required: 'Goverment level cannot be blank'
 	},
+	state: {
+		type: String,
+		default: '',
+		trim: true,
+		required: 'State cannot be blank'
+	},
+	city: {
+		type: String,
+		default: '',
+		trim: true,
+		required: 'City cannot be blank'
+	},
 	summary: {
 		type: String,
 		default: '',

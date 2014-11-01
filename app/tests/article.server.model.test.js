@@ -30,8 +30,10 @@ describe('Article Model Unit Tests:', function() {
 		user.save(function() {
 			article = new Article({
 				proposalName: 'Name of proposal',
-				sponsorName: 'Name of ponsor',
+				sponsorName: 'Name of sponsor',
 				govLevel: 'Goverment Level',
+				state: 'State',
+				city: 'City',
 				summary: 'Proposal summary',
 				proposalLink: 'Proposal Link',
 				user: user

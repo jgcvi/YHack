@@ -34,10 +34,32 @@
 						<input name="govLevel" type="text" data-ng-model="article.govLevel" id="govLevel" class="form-control" placeholder="Goverment Level" required>
 					</div>
 					<div ng-show="submitted && articleForm.govLevel.$invalid" class="help-block">
-						<p ng-show="articleForm.govLevel.$error.required" class="text-danger">Name of sponsor is required</p>
+						<p ng-show="articleForm.govLevel.$error.required" class="text-danger">Goverment Level is required</p>
 					</div>
 				</div>
 				<!--End of Third Form Field!-->
+				<!--Third and a half Form Field!-->
+				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.state.$invalid}">
+					<label class="control-label" for="state">State</label>
+					<div class="controls">
+						<input name="state" type="text" data-ng-model="article.state" id="state" class="form-control" placeholder="State" required>
+					</div>
+					<div ng-show="submitted && articleForm.state.$invalid" class="help-block">
+						<p ng-show="articleForm.state.$error.required" class="text-danger">State is required</p>
+					</div>
+				</div>
+				<!--End of Third and a half Form Field!-->
+				<!--Third and a three quarters Form Field!-->
+				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.city.$invalid}">
+					<label class="control-label" for="city">City</label>
+					<div class="controls">
+						<input name="city" type="text" data-ng-model="article.city" id="city" class="form-control" placeholder="City" required>
+					</div>
+					<div ng-show="submitted && articleForm.city.$invalid" class="help-block">
+						<p ng-show="articleForm.city.$error.required" class="text-danger">City is required</p>
+					</div>
+				</div>
+				<!--End of Third and three quarters Form Field!-->
 				<!--Fourth Form Field!-->
 				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.summary.$invalid}">
 					<label class="control-label" for="summary">Summary</label>

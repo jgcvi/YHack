@@ -56,6 +56,8 @@
 				proposalName: 'An Article about MEAN',
 				sponsorName: 'Mr. MEAN',
 				govLevel: 'Local',
+				state: 'CT',
+				city: 'New Haven',
 				summary: 'MEAN rocks!',
 				proposalLink: 'http://www.MEANArticle.com'
 			});
@@ -80,6 +82,8 @@
 				proposalName: 'An Article about MEAN',
 				sponsorName: 'Mr. MEAN',
 				govLevel: 'Local',
+				state: 'CT',
+				city: 'New Haven',
 				summary: 'MEAN rocks!',
 				proposalLink: 'http://www.MEANArticle.com'
 			});
@@ -104,6 +108,8 @@
 				proposalName: 'An Article about MEAN',
 				sponsorName: 'Mr. MEAN',
 				govLevel: 'Local',
+				state: 'CT',
+				city: 'New Haven',
 				summary: 'MEAN rocks!',
 				proposalLink: 'http://www.MEANArticle.com'
 			});
@@ -114,6 +120,8 @@
 				proposalName: 'An Article about MEAN',
 				sponsorName: 'Mr. MEAN',
 				govLevel: 'Local',
+				state: 'CT',
+				city: 'New Haven',
 				summary: 'MEAN rocks!',
 				proposalLink: 'http://www.MEANArticle.com'
 			});
@@ -122,6 +130,8 @@
 			scope.proposalName = 'An Article about MEAN';
 			scope.sponsorName: 'Mr. MEAN';
 			scope.govLevel: 'Local';
+			scope.state: 'CT';
+			scope.city: 'New Haven';
 			scope.proposalLink: 'http://www.MEANArticle.com';
 			scope.summary = 'MEAN rocks!';
 
@@ -150,6 +160,8 @@
 				proposalName: 'An Article about MEAN',
 				sponsorName: 'Mr. MEAN',
 				govLevel: 'Local',
+				state: 'CT',
+				city: 'New Haven',
 				summary: 'MEAN rocks!',
 				proposalLink: 'http://www.MEANArticle.com'
 			});

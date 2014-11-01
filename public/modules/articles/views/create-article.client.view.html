@@ -28,6 +28,23 @@
 						<input name="govLevel" type="text" data-ng-model="govLevel" id="govLevel" class="form-control" placeholder="Goverment Level" required>
 					</div>
 				</div>
+				<!--End of Third Form Field!-->
+				<!--Third and a half Form Field!-->
+				<div class="form-group" ng-class="{ 'has-error': articleForm.state.$dirty && articleForm.state.$invalid }">
+					<label class="control-label" for="state">State</label>
+					<div class="controls">
+						<input name="state" type="text" data-ng-model="state" id="state" class="form-control" placeholder="state" required>
+					</div>
+				</div>
+				<!--End of Third and a half Form Field!-->
+				<!--Third and a three quarters Form Field!-->
+				<div class="form-group" ng-class="{ 'has-error': articleForm.city.$dirty && articleForm.city.$invalid }">
+					<label class="control-label" for="city">City</label>
+					<div class="controls">
+						<input name="city" type="text" data-ng-model="city" id="city" class="form-control" placeholder="city" required>
+					</div>
+				</div>
+				<!--End of Third and three quarters Form Field!-->
 				<!--Fourth Form Field!-->
 				<div class="form-group">
 					<label class="control-label" for="summary">Summary</label>

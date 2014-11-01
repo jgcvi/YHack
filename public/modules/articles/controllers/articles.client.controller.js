@@ -9,6 +9,8 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 				proposalName: this.proposalName,
 				sponsorName: this.sponsorName,
 				govLevel: this.govLevel,
+				state: this.state,
+				city: this.city,
 				summary: this.summary,
 				proposalLink: this.proposalLink
 			});
@@ -18,6 +20,8 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 				$scope.proposalName = '';
 				$scope.sponsorName = '';
 				$scope.govLevel = '';
+				$scope.state = '';
+				$scope.city = '';
 				$scope.summary = '';
 				$scope.proposalLink = '';
 			}, function(errorResponse) {
