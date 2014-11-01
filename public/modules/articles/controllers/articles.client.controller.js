@@ -7,13 +7,19 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 		$scope.create = function() {
 			var article = new Articles({
 				proposalName: this.proposalName,
-				summary: this.summary
+				sponsorName: this.sponsorName,
+				govLevel: this.govLevel,
+				summary: this.summary,
+				proposalLink: this.proposalLink
 			});
 			article.$save(function(response) {
 				$location.path('articles/' + response._id);
 
 				$scope.proposalName = '';
+				$scope.sponsorName = '';
+				$scope.govLevel = '';
 				$scope.summary = '';
+				$scope.proposalLink = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

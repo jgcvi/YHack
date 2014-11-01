@@ -54,7 +54,10 @@
 			// Create sample article using the Articles service
 			var sampleArticle = new Articles({
 				proposalName: 'An Article about MEAN',
-				summary: 'MEAN rocks!'
+				sponsorName: 'Mr. MEAN',
+				govLevel: 'Local',
+				summary: 'MEAN rocks!',
+				proposalLink: 'http://www.MEANArticle.com'
 			});
 
 			// Create a sample articles array that includes the new article
@@ -75,7 +78,10 @@
 			// Define a sample article object
 			var sampleArticle = new Articles({
 				proposalName: 'An Article about MEAN',
-				summary: 'MEAN rocks!'
+				sponsorName: 'Mr. MEAN',
+				govLevel: 'Local',
+				summary: 'MEAN rocks!',
+				proposalLink: 'http://www.MEANArticle.com'
 			});
 
 			// Set the URL parameter
@@ -96,18 +102,27 @@
 			// Create a sample article object
 			var sampleArticlePostData = new Articles({
 				proposalName: 'An Article about MEAN',
-				summary: 'MEAN rocks!'
+				sponsorName: 'Mr. MEAN',
+				govLevel: 'Local',
+				summary: 'MEAN rocks!',
+				proposalLink: 'http://www.MEANArticle.com'
 			});
 
 			// Create a sample article response
 			var sampleArticleResponse = new Articles({
 				_id: '525cf20451979dea2c000001',
 				proposalName: 'An Article about MEAN',
-				summary: 'MEAN rocks!'
+				sponsorName: 'Mr. MEAN',
+				govLevel: 'Local',
+				summary: 'MEAN rocks!',
+				proposalLink: 'http://www.MEANArticle.com'
 			});
 
 			// Fixture mock form input values
 			scope.proposalName = 'An Article about MEAN';
+			scope.sponsorName: 'Mr. MEAN';
+			scope.govLevel: 'Local';
+			scope.proposalLink: 'http://www.MEANArticle.com';
 			scope.summary = 'MEAN rocks!';
 
 			// Set POST response
@@ -119,6 +134,9 @@
 
 			// Test form inputs are reset
 			expect(scope.proposalName).toEqual('');
+			expect(scope.sponsorName).toEqual('');
+			expect(scope.govLevel).toEqual('');
+			expect(scope.proposalLink).toEqual('');
 			expect(scope.summary).toEqual('');
 
 			// Test URL redirection after the article was created
@@ -130,7 +148,10 @@
 			var sampleArticlePutData = new Articles({
 				_id: '525cf20451979dea2c000001',
 				proposalName: 'An Article about MEAN',
-				summary: 'MEAN Rocks!'
+				sponsorName: 'Mr. MEAN',
+				govLevel: 'Local',
+				summary: 'MEAN rocks!',
+				proposalLink: 'http://www.MEANArticle.com'
 			});
 
 			// Mock article in scope
