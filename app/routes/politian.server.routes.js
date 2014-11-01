@@ -21,7 +21,7 @@ module.exports = function(app) {
 	app.route('/auth/reset/:token').post(politian.reset);
 
 	// Setting up the politian authentication api
-	app.route('/auth/signupP').post(politian.signup);
+	app.route('/auth/signup').post(politian.signup);
 	app.route('/auth/signin').post(politian.signin);
 	app.route('/auth/signout').get(politian.signout);
 
