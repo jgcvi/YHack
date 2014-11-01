@@ -20,6 +20,7 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 		};
 
 		$scope.signin = function() {
+			$http.post('I\'m a dummy ', $scope.authentication.user.displayName);
 			$http.post('/auth/signin', $scope.credentials).success(function(response) {
 				// If successful we assign the response to the global user model
 				$scope.authentication.user = response;
@@ -28,7 +29,7 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 			//		$http.post('I\'m a dummy ' + $scope.authentication.user.displayName);
 				if($scope.authentication.user.politician === true)
 				{
-					response.setHeader('Location', '/politician');
+					//response.setHeader('Location', '/politician');
 					$http.post('I\'m a dummy ' + $scope.authentication.user.displayName);
 				}
 				else
