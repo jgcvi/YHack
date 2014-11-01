@@ -4,6 +4,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 	function($scope, $stateParams, $location, Authentication, Articles) {
 		$scope.authentication = Authentication;
 
+	//	var Articles = new $resource('articles/');
 		$scope.create = function() {
 			var article = new Articles({
 				proposalName: this.proposalName,
@@ -46,10 +47,9 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 			}
 		};
 
-		$scope.addComment = function(article) 
-		{
-			
-		}
+		$scope.btn_add = function() {
+			$scope.comments.push({date: Date.now, name: this, comment: this.commentField});
+		};
 		
 		$scope.update = function() {
 			var article = $scope.article;

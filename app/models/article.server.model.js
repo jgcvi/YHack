@@ -9,6 +9,21 @@ var mongoose = require('mongoose'),
 /**
  * Article Schema
  */
+
+ var commentSchema = new Schema({
+ 	created: {
+		type: Date,
+		default: Date.now
+	},
+
+	user: {
+		type: Schema.ObjectId,
+		ref: 'User'
+	},
+
+	comment: String
+ });
+
 var ArticleSchema = new Schema({
 	created: {
 		type: Date,
@@ -58,7 +73,12 @@ var ArticleSchema = new Schema({
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
-	}
+	},
+
+	 comment: {
+	 	type: [commentSchema],
+	 	default: []
+	 }
 });
 
 mongoose.model('Article', ArticleSchema);

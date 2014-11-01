@@ -60,7 +60,7 @@ Array.prototype.unique = function() {
 		}
 	}
 	return a;
-}
+};
 /*
 var req = http.request('/constituents', function(res) {
 	// returns an array of unread articles, and sets the article array to the current + 10
