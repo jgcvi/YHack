@@ -7,13 +7,22 @@ var commentSchema = new Schema( {
 		type: Date,
 		default: Date.now
 	},
-
 	user: {
-		type: ObjectId,
+<<<<<<< Updated upstream
+		type: String,
 		ref: 'User'
-	}
+	},
+	comment: {
+		type: String,
+		ref: 'User'
+	} 
+=======
+		type: Schema.ObjectId,
+		ref: 'User'
+	},
 
 	comment: String
+>>>>>>> Stashed changes
 });
 
 mongoose.model('Comment', commentSchema);

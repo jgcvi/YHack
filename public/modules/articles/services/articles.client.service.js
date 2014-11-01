@@ -11,4 +11,6 @@ angular.module('articles').factory('Articles', ['$resource',
 			}
 		});
 	}
+
+	
 ]);

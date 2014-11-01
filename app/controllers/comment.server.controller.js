@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 var mongoose = require('mongoose'),
 	errorHandler = require('./errors'),
@@ -16,4 +16,4 @@ $scope.create = function() {
 			return null;
 		else return articles.comments.push(this.commentField);
 	});
-}
+}*/
