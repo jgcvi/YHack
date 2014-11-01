@@ -62,7 +62,7 @@ Array.prototype.unique = function() {
 	return a;
 }
 
-var req = http.request({path: '/constituents'}, function(res) {
+var req = http.request('/constituents', function(res) {
 	// returns an array of unread articles, and sets the article array to the current + 10
 	res.on('get', function(data) {
 		var newArticles = [];
@@ -79,5 +79,11 @@ var req = http.request({path: '/constituents'}, function(res) {
 
 	res.on('error', function(data) {
 		// error handle idk yet
+	});
+});
+
+var rep = http.request('politicians', function(res) {
+	res.on('get', function(data) {
+
 	});
 });
