@@ -15,6 +15,7 @@ var commentSchema = new Schema( {
 		type: String,
 		ref: 'User'
 	}
+
 });
 
 mongoose.model('Comment', commentSchema);
