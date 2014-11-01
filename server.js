@@ -47,3 +47,37 @@ var options = {
 //var req = http.({ options, function(res) {
 	
 //});
+
+var articles = [];
+Array.prototype.unique = function() {
+	var a = this.concat();
+	for(var i = 0; i < this.length; i ++) 
+	{
+		for(var j = 0; j < this.length; j ++)
+		{
+			if( a[i] === a[j])
+				a.splice(j--, 1);
+		}
+	}
+	return a;
+}
+
+var req = http.request({path: '/constituents'}, function(res) {
+	// returns an array of unread articles, and sets the article array to the current + 10
+	res.on('get', function(data) {
+		var newArticles = [];
+		newArticles = db.articles.find({_id: {$lt: Date.now() } }.limit(10 + 10 * articles.length));
+		var combine = articles.concat(newArticles);
+		combine.unique();
+
+		var ret = combine.concat(articles);
+		ret.unique();
+		
+		articles = combine;
+		return ret;
+	});
+
+	res.on('error', function(data) {
+		// error handle idk yet
+	});
+});

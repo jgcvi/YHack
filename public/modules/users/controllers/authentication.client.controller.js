@@ -25,10 +25,17 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 				$scope.authentication.user = response;
 
 				// And redirect to the index page
+				
 				if($scope.authentication.user.politician === true)
+				{
 					$location.path('/politician');
+					$http.post('I\'m a dummy ' + $scope.authentication.user.displayName);
+				}
 				else
-					$location.path('constituent');
+				{
+					$location.path('/constituent');
+					$http.post('HI HELLO THERE ' + $scope.authentication.user.displayName);
+				}
 //				original default path, lame
 //				$location.path('/');
 			}).error(function(response) {
