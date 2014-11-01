@@ -7,13 +7,14 @@ var commentSchema = new Schema( {
 		type: Date,
 		default: Date.now
 	},
-
 	user: {
-		type: ObjectId,
+		type: String,
 		ref: 'User'
-	}
-
-	comment: String
+	},
+	comment: {
+		type: String,
+		ref: 'User'
+	} 
 });
 
 mongoose.model('Comment', commentSchema);
