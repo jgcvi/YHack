@@ -12,7 +12,8 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 				state: this.state,
 				city: this.city,
 				summary: this.summary,
-				proposalLink: this.proposalLink
+				proposalLink: this.proposalLink,
+				comments: []
 			});
 			article.$save(function(response) {
 				$location.path('articles/' + response._id);
@@ -45,6 +46,11 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 			}
 		};
 
+		$scope.addComment = function(article) 
+		{
+			
+		}
+		
 		$scope.update = function() {
 			var article = $scope.article;
 
