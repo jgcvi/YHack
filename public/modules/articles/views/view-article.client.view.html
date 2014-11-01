@@ -24,4 +24,19 @@
 	<p class="proposalInfo" data-ng-bind="article.city"></p><br />
 	<p class="proposalInfo" data-ng-bind="article.summary"></p><br />
 	<p class="proposalInfo" data-ng-bind="article.proposalLink"></p>
+
+	 <div id='commentsFormArea'>
+            <form ng-controller="ArticlesController">
+                Post your Comment
+                <form ng-controller="ArticlesController">
+                    <textarea ng-model="article.addComment" placeholder="Your Comment" style='width:550px'></textarea>
+                    <button ng-click='btn_add();' style='margin-top:10px;'>Post Comment</button>
+ 
+                    <h4>Comments</h4>
+                    <ul>
+                        <li ng-repeat="comnt in comment"> {{ comnt }} <a  style="float: right;" href="" ng-click="remItem($index)">x</a></li>
+                    </ul>
+                </form> 
+        </div>
+ 
 </section>
