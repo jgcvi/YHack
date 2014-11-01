@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/yhack-dev',
+	db: 'mongodb://172.26.12.71/yhack-dev',
 	app: {
 		title: 'YHack - Development Environment'
 	},
