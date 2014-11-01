@@ -64,5 +64,15 @@
     "load-grunt-tasks": "~0.6.0",
     "should": "~4.0.4",
     "supertest": "~0.14.0"
-  }
+  },
+  "main": "gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kusaibito/YHack.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kusaibito/YHack/issues"
+  },
+  "homepage": "https://github.com/kusaibito/YHack"
 }
