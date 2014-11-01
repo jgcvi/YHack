@@ -25,16 +25,21 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 				$scope.authentication.user = response;
 
 				// And redirect to the index page
-				
+			//		$http.post('I\'m a dummy ' + $scope.authentication.user.displayName);
 				if($scope.authentication.user.politician === true)
 				{
-					$location.path('/politician');
+					response.setHeader('Location', '/politician');
 					$http.post('I\'m a dummy ' + $scope.authentication.user.displayName);
 				}
 				else
 				{
-					$location.path('/constituent');
-					$http.post('HI HELLO THERE ' + $scope.authentication.user.displayName);
+				//	$http.post('HI HELLO THERE ', $scope.authentication.user.displayName);
+				//	response.statusCode = 302;
+					$location.path('./constituent', function(res) {
+						console.log("Status: ", response.statusCode);
+					});
+				//	$location.path('/constituent');
+
 				}
 //				original default path, lame
 //				$location.path('/');
