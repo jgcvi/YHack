@@ -1,14 +1,11 @@
 {
 	"name": "yhack",
-<<<<<<< HEAD
 	"description": "Political social platform",
 	"version": "0.0.1",
 	"author": "YHack2014 group",
-=======
 	"description": "Political Social Platform",
 	"version": "0.0.1",
 	"author": "YHack 2014",
->>>>>>> origin/master
 	"engines": {
 		"node": "0.10.x",
 		"npm": "1.4.x"

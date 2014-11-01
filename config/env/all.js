@@ -3,13 +3,10 @@
 module.exports = {
 	app: {
 		title: 'YHack',
-<<<<<<< HEAD
 		description: 'Political social platform',
-		keywords: 'MongoDb,Express,AngularJS,Node.js'
-=======
+		keywords: 'MongoDb,Express,AngularJS,Node.js',
 		description: 'Political Social Platform',
 		keywords: 'MongoDB,Express,AngularJS,Node.js'
->>>>>>> origin/master
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',

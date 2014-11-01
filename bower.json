@@ -1,11 +1,8 @@
 {
 	"name": "yhack",
 	"version": "0.0.1",
-<<<<<<< HEAD
 	"description": "Political social platform",
-=======
 	"description": "Political Social Platform",
->>>>>>> origin/master
 	"dependencies": {
 		"bootstrap": "~3",
 		"angular": "~1.2",
