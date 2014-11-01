@@ -3,8 +3,6 @@
 module.exports = {
 	app: {
 		title: 'YHack',
-		description: 'Political social platform',
-		keywords: 'MongoDb,Express,AngularJS,Node.js',
 		description: 'Political Social Platform',
 		keywords: 'MongoDB,Express,AngularJS,Node.js'
 	},
