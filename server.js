@@ -33,3 +33,17 @@ exports = module.exports = app;
 
 // Logging initialization
 console.log('MEAN.JS application started on port ' + config.port);
+
+// returning the proper homepage
+var http = require('http');
+
+var options = {
+	host:	'172.26.12.71',
+	port:	3000,
+	path: '/auth/login',
+
+};
+
+//var req = http.({ options, function(res) {
+	
+//});
