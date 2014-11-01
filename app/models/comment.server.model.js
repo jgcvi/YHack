@@ -11,16 +11,8 @@ var commentSchema = new Schema( {
 		type: String,
 		ref: 'User'
 	},
-<<<<<<< Updated upstream
-	comment: {
-		type: String,
-		ref: 'User'
-	}
-
-=======
 
 	comment: String
->>>>>>> Stashed changes
 });
 
 mongoose.model('Comment', commentSchema);
