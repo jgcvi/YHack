@@ -3,7 +3,7 @@
 module.exports = {
 	db: 'mongodb://172.26.12.71/yhack-dev',
 	app: {
-		title: 'YHack - Development Environment'
+		title: 'Median'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

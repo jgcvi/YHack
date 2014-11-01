@@ -14,13 +14,13 @@ var ArticleSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	title: {
+	proposalName: {
 		type: String,
 		default: '',
 		trim: true,
 		required: 'Title cannot be blank'
 	},
-	content: {
+	summary: {
 		type: String,
 		default: '',
 		trim: true

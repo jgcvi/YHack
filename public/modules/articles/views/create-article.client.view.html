@@ -5,16 +5,16 @@
 	<div class="col-md-12">
 		<form name="articleForm" class="form-horizontal" data-ng-submit="create()" novalidate>
 			<fieldset>
-				<div class="form-group" ng-class="{ 'has-error': articleForm.title.$dirty && articleForm.title.$invalid }">
-					<label class="control-label" for="title">Title</label>
+				<div class="form-group" ng-class="{ 'has-error': articleForm.title.$dirty && articleForm.proposalName.$invalid }">
+					<label class="control-label" for="proposalName">Name of proposal</label>
 					<div class="controls">
-						<input name="title" type="text" data-ng-model="title" id="title" class="form-control" placeholder="Title" required>
+						<input name="proposalName" type="text" data-ng-model="proposalName" id="proposalName" class="form-control" placeholder="Name of proposal" required>
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label" for="content">Content</label>
+					<label class="control-label" for="summary">Summary</label>
 					<div class="controls">
-						<textarea name="content" data-ng-model="content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+						<textarea name="summary" data-ng-model="summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Summary"></textarea>
 					</div>
 				</div>
 				<div class="form-group">

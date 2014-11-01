@@ -6,14 +6,14 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 
 		$scope.create = function() {
 			var article = new Articles({
-				title: this.title,
-				content: this.content
+				proposalName: this.proposalName,
+				summary: this.summary
 			});
 			article.$save(function(response) {
 				$location.path('articles/' + response._id);
 
-				$scope.title = '';
-				$scope.content = '';
+				$scope.proposalName = '';
+				$scope.summary = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});
