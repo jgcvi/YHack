@@ -61,7 +61,7 @@ Array.prototype.unique = function() {
 	}
 	return a;
 }
-
+/*
 var req = http.request('/constituents', function(res) {
 	// returns an array of unread articles, and sets the article array to the current + 10
 	res.on('get', function(data) {
@@ -74,7 +74,7 @@ var req = http.request('/constituents', function(res) {
 		ret.unique();
 		
 		articles = combine;
-		return ret;
+		return res.send(ret);
 	});
 
 	res.on('error', function(data) {
@@ -87,3 +87,4 @@ var rep = http.request('politicians', function(res) {
 
 	});
 });
+*/
