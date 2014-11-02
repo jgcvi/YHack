@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-//	db: 'mongodb://localhost/yhack-dev',
 	db: 'mongodb://172.26.0.170/yhack-dev',
 	app: {
 		title: 'Median'

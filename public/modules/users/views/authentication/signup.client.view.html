@@ -1,3 +1,4 @@
+<body ng-app='ngToggle'>
 <section class="row" data-ng-controller="AuthenticationController">
 	<h3 class="col-md-12 text-center">Sign up using your social accounts</h3>
 	<div class="col-md-12 text-center">
@@ -45,10 +46,34 @@
 					<button type="submit" class="btn btn-large btn-primary">Sign up</button>&nbsp; or&nbsp;
 					<a href="/#!/signin" class="show-signup">Sign in</a>
 				</div>
-				<div class="text-center form-group">
-					Politician
-					<button type="checkbox" class="btn btn-large btn-primary"></button>&nbsp; or&nbsp;
+		<!--		<div ng-app='ngToggle'> 
+					<span ng-controller='AppCtrl'>
+						<span ng-hide='custom'>
+							hi
+							<div class='form-group'>
+								<label for="city">City</label>
+								<label for="city">City</label>
+								<input type="text" id="city" name="city" class="form-control" data-ng-model="credentials.city" placeholder="City">
+							</div>
+							<div class='form-group'>
+								<label for="state">State</label>
+								<label for="state">State</label>	
+								<input type="text" id="state" name="state" class="form-control" data-ng-model="credentials.state" placeholder="State">
+							</div>
+							<div class='form-group'>
+								<label for="office"></label>
+								<label for="office">Elected Office</label>
+								<input type="text" id="office" name="office" class="form-control" data-ng-model="credentials.office" placeholder="	Elected Office">
+							</div>
+
+						</span>
+					</span>
+					
 				</div>
+				<div class="text-center form-group">
+					Politician?
+					<button type="checkbox" class="btn btn-large btn-primary" onchange='custom=!custom'></button>&nbsp;&nbsp;
+				</div>-->
 				<div data-ng-show="error" class="text-center text-danger">
 					<strong data-ng-bind="error"></strong>
 				</div>
@@ -56,3 +81,4 @@
 		</form>
 	</div>
 </section>
+</body>
