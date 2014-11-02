@@ -7,17 +7,17 @@
 			<fieldset>
 				<!--First From Field!-->
 				<div class="form-group" ng-class="{ 'has-error': articleForm.proposalName.$dirty && articleForm.proposalName.$invalid }">
-					<label class="control-label" for="proposalName">Name of proposal</label>
+					<label class="control-label" for="proposalName">Name of Proposal</label>
 					<div class="controls">
-						<input name="proposalName" type="text" data-ng-model="proposalName" id="proposalName" class="form-control" placeholder="Name of proposal" required>
+						<input name="proposalName" type="text" data-ng-model="proposalName" id="proposalName" class="form-control" placeholder="Title" required>
 					</div>
 				</div>
 				<!--End of First Form Field!-->
 				<!--Second Form Field!-->
 				<div class="form-group" ng-class="{ 'has-error': articleForm.sponsorName.$dirty && articleForm.sponsorName.$invalid }">
-					<label class="control-label" for="sponsorName">Name of sponsor</label>
+					<label class="control-label" for="sponsorName">Name of Sponsor</label>
 					<div class="controls">
-						<input name="sponsorName" type="text" data-ng-model="sponsorName" id="sponsorName" class="form-control" placeholder="Name of sponsor" required>
+						<input name="sponsorName" type="text" data-ng-model="sponsorName" id="sponsorName" class="form-control" placeholder="Name(s) of Sponsor(s)" required>
 					</div>
 				</div>
 				<!--End of Second Form Field!-->
@@ -25,23 +25,23 @@
 				<div class="form-group" ng-class="{ 'has-error': articleForm.govLevel.$dirty && articleForm.govLevel.$invalid }">
 					<label class="control-label" for="govLevel">Goverment Level</label>
 					<div class="controls">
-						<input name="govLevel" type="text" data-ng-model="govLevel" id="govLevel" class="form-control" placeholder="Goverment Level" required>
+						<input name="govLevel" type="text" data-ng-model="govLevel" id="govLevel" class="form-control" placeholder="Local/State/National" required>
 					</div>
 				</div>
 				<!--End of Third Form Field!-->
 				<!--Third and a half Form Field!-->
-				<div class="form-group" ng-class="{ 'has-error': articleForm.state.$dirty && articleForm.state.$invalid }">
-					<label class="control-label" for="state">State</label>
+				<div class="form-group" ng-class="{ 'has-error': articleForm.city.$dirty && articleForm.city.$invalid }">
+					<label class="control-label" for="city">City</label>
 					<div class="controls">
-						<input name="state" type="text" data-ng-model="state" id="state" class="form-control" placeholder="State" required>
+						<input name="City" type="text" data-ng-model="city" id="city" class="form-control" placeholder="City" required>
 					</div>
 				</div>
 				<!--End of Third and a half Form Field!-->
 				<!--Third and a three quarters Form Field!-->
-				<div class="form-group" ng-class="{ 'has-error': articleForm.city.$dirty && articleForm.city.$invalid }">
-					<label class="control-label" for="city">City</label>
+				<div class="form-group" ng-class="{ 'has-error': articleForm.state.$dirty && articleForm.state.$invalid }">
+					<label class="control-label" for="state">State</label>
 					<div class="controls">
-						<input name="City" type="text" data-ng-model="city" id="city" class="form-control" placeholder="city" required>
+						<input name="state" type="text" data-ng-model="state" id="state" class="form-control" placeholder="State" required>
 					</div>
 				</div>
 				<!--End of Third and three quarters Form Field!-->
@@ -57,7 +57,7 @@
 				<div class="form-group" ng-class="{ 'has-error': articleForm.proposalLink.$dirty && articleForm.proposalLink.$invalid }">
 					<label class="control-label" for="proposalLink">Proposal Link</label>
 					<div class="controls">
-						<input name="proposalLink" type="text" data-ng-model="proposalLink" id="proposalLink" class="form-control" placeholder="Proposal Link" required>
+						<input name="proposalLink" type="text" data-ng-model="proposalLink" id="proposalLink" class="form-control" placeholder="Link to full text" required>
 					</div>
 				</div>
 				<!--End of Fifth Form Field!-->
