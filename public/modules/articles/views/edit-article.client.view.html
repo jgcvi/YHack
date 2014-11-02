@@ -1,15 +1,15 @@
 <section data-ng-controller="ArticlesController" data-ng-init="findOne()">
 	<div class="page-header">
-		<h1>Edit Article</h1>
+		<center><h2>Edit Proposal</h2></center>
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-8 col-md-offset-2">
 		<form name="articleForm" class="form-horizontal" data-ng-submit="update(articleForm.$valid)" novalidate>
 			<fieldset>
 				<!--First Form Field!-->
 				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.proposalName.$invalid}">
 					<label class="control-label" for="proposalName">Name of Proposal</label>
 					<div class="controls">
-						<input name="proposalName" type="text" data-ng-model="article.proposalName" id="proposalName" class="form-control" placeholder="Name of proposal" required>
+						<input name="proposalName" type="text" data-ng-model="article.proposalName" id="proposalName" class="form-control" placeholder="Title" required>
 					</div>
 					<div ng-show="submitted && articleForm.proposalName.$invalid" class="help-block">
 						<p ng-show="articleForm.proposalName.$error.required" class="text-danger">Name of proposal is required</p>
@@ -20,7 +20,7 @@
 				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.sponsorName.$invalid}">
 					<label class="control-label" for="sponsorName">Name of Sponsor</label>
 					<div class="controls">
-						<input name="sponsorName" type="text" data-ng-model="article.sponsorName" id="sponsorName" class="form-control" placeholder="Name of sponsor" required>
+						<input name="sponsorName" type="text" data-ng-model="article.sponsorName" id="sponsorName" class="form-control" placeholder="Name(s) of Sponsor(s)" required>
 					</div>
 					<div ng-show="submitted && articleForm.sponsorName.$invalid" class="help-block">
 						<p ng-show="articleForm.sponsorName.$error.required" class="text-danger">Name of sponsor is required</p>
@@ -29,9 +29,9 @@
 				<!--End of Second Form Field!-->
 				<!--Third Form Field!-->
 				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.govLevel.$invalid}">
-					<label class="control-label" for="govLevel">Goverment Level</label>
+					<label class="control-label" for="govLevel">Level of Government</label>
 					<div class="controls">
-						<input name="govLevel" type="text" data-ng-model="article.govLevel" id="govLevel" class="form-control" placeholder="Goverment Level" required>
+						<input name="govLevel" type="text" data-ng-model="article.govLevel" id="govLevel" class="form-control" placeholder="Local/State/National" required>
 					</div>
 					<div ng-show="submitted && articleForm.govLevel.$invalid" class="help-block">
 						<p ng-show="articleForm.govLevel.$error.required" class="text-danger">Goverment Level is required</p>
@@ -64,7 +64,7 @@
 				<div class="form-group" ng-class="{ 'has-error' : submitted && articleForm.summary.$invalid}">
 					<label class="control-label" for="summary">Summary</label>
 					<div class="controls">
-						<textarea name="summary" data-ng-model="article.summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Proposal summary" required></textarea>
+						<textarea name="summary" data-ng-model="article.summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Summary" required></textarea>
 					</div>
 					<div ng-show="submitted && articleForm.summary.$invalid" class="help-block">
 						<p ng-show="articleForm.summary.$error.required" class="text-danger">Summary is required</p>
