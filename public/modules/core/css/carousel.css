@@ -61,6 +61,42 @@ body {
 }
 
 
+.main-text
+{
+    position: absolute;
+    top: 75px;
+    width: 70%;
+    height:45%;
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.6);
+    left:15%;
+}
+
+.main-text img{
+    z-index: 15;
+    max-width: 100%;
+  }
+
+
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
