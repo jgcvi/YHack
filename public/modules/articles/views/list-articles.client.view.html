@@ -12,8 +12,8 @@
 			</small>
 			<h4 class="list-group-item-heading" data-ng-bind="article.proposalName"></h4>
 			<h4 class="list-group-item-heading" data-ng-bind="article.sponsorName"></h4>
-			<p class="list-group-item-text" data-ng-bind="govLevel.summary"></p>
-			<p class="list-group-item-text" data-ng-bind="article.summary"></p>
+			<p class="list-group-item-text" data-ng-bind="article.govLevel"></p>
+			<p class="list-group-item-text" data-ng-bind="article.summary | limitTo:600" ></p>
 		</a>
 	</div>
 	<div class="alert alert-warning text-center" data-ng-if="articles.$resolved && !articles.length">
