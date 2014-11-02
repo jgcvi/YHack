@@ -2,6 +2,7 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+/*
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -87,6 +88,10 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing{
+  color : #5a5a5a;
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;

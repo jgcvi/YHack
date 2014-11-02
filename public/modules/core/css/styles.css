@@ -1,8 +1,9 @@
 /* bootstrap 3 helpers */
-
+/*
 .navbar-form input, .form-inline input {
 	width:auto;
 }
+*/
 
 /* end */
 
@@ -36,9 +37,14 @@ body {
   background-color:#eee;
 }
 
-a,a:hover {
-	color:##74C365;
+a {
+	color:#74C365;
   	text-decoration:none;
+}
+
+a:hover {
+  color:#8A9A5B;
+    text-decoration:none;
 }
 
 .highlight-bk {
@@ -57,7 +63,7 @@ h3.highlight  {
   	border-bottom:2px solid #74C365;
 }
 
-.navbar {
+/*.navbar {
 	background-color:#74C365;
   	color:#ffffff;
     border:0;
@@ -67,14 +73,14 @@ h3.highlight  {
   	color:#fff; 
   	padding-left:20px;
   	padding-right:20px;
-  /*	border-left:1px solid #ee3333; */
+  	border-left:1px solid #ee3333; 
 }
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     color:#666666; 
 }
-/*.navbar-nav > li:last-child > a {
+.navbar-nav > li:last-child > a {
   	border-right:1px solid #ee3333; 
-}*/
+}
 .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #ffffff;
 	background-color:transparent;
@@ -90,7 +96,7 @@ h3.highlight  {
     border-color:#777777;
     border-width:0;
 }
-
+*/
 .accordion-group {
 	border-width:0;
 }
@@ -106,7 +112,7 @@ h3.highlight  {
 .caret {
 	color:#fff;
 }
-
+/*
 .navbar-toggle {
 	color:#fff;
     border-width:0;
@@ -115,15 +121,12 @@ h3.highlight  {
 .navbar-toggle:hover {
 	background-color:#fff;
 }
-
+*/
 .panel {
 	padding-left:27px;
     padding-right:27px;
 
 }
 
-.list-group span{
-  white-space:nowrap;
-}
 
 /* end theme */
