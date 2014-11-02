@@ -1,21 +1,24 @@
 <section data-ng-controller="ArticlesController" data-ng-init="find()">
 	<div class="page-header">
-		<h1>Articles</h1>
+		<!--<h1>Proposals:</h1>!-->
 	</div>
 	<div class="list-group">
 		<a data-ng-repeat="article in articles" data-ng-href="#!/articles/{{article._id}}" class="list-group-item">
-			<small class="list-group-item-text">
-				Posted on
-				<span data-ng-bind="article.created | date:'mediumDate'"></span>
-				by
-				<span data-ng-bind="article.user.displayName"></span>
-			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="article.proposalName"></h4>
-			<h4 class="list-group-item-heading" data-ng-bind="article.sponsorName"></h4>
-			<p class="list-group-item-text" data-ng-bind="article.govLevel"></p>
-			<p class="list-group-item-text" data-ng-bind="article.summary | limitTo:600" ></p>
-		</a>
-	</div>
+			<h3 class="list-group-item-heading proposalHeading" data-ng-bind="article.proposalName"></h4><br />
+			<h5 class="list-group-item-heading" data-ng-bind="article.sponsorName"></h4><br />
+			<p class="list-group-item-text" data-ng-bind="article.govLevel"></p><br />
+			<p class="list-group-item-text" data-ng-bind="article.summary | limitTo:600"></p>
+		        <p></p>
+		        <p>
+		          <i class="icon-user"></i> by <span data-ng-bind="article.user.displayName"></span>
+		          | <i class="icon-calendar"></i> <span data-ng-bind="article.created | date:'mediumDate'"></span> 
+		          | <i class="icon-comment"></i> <i>3 Comments</i>
+		          | <i class="icon-share"></i> <i>39 Shares</i>
+		        </p>
+		      </div>
+		    </div>
+				</a>
+			</div>
 	<div class="alert alert-warning text-center" data-ng-if="articles.$resolved && !articles.length">
 		No articles yet, why don't you <a href="/#!/articles/create">create one</a>?
 	</div>
