@@ -47,8 +47,9 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 			}
 		};
 
-		$scope.btn_add = function() {
-			$scope.comments.push({date: Date.now, name: this, comment: this.commentField});
+		$scope.btn_add = function(article) {
+			$scope.comments.push(this.comment);
+			$scope.comment = {};
 		};
 		
 		$scope.update = function() {
