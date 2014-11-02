@@ -2,11 +2,55 @@
 	<div class="page-header">
 		<!--<h1>Proposals:</h1>!-->
 	</div>
+
+	<div class="container">
+	<div class="row">
+  			<div class="col col-sm-3">
+              	<div id="sidebar">
+      			<ul class="nav nav-stacked">
+                    <li><h3 class="highlight">Policy Proposals <i class="glyphicon glyphicon-check pull-right"></i></h3></li>
+                  	<li><a href="#">Local</a></li>
+          			<li><a href="#">State</a></li>
+          			<li><a href="#">National</a></li>
+				</ul>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                Accordion
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                              <p>There is a lot to be said about RWD.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    Accordion
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                  <p>Use @media queries or utility classes to customize responsiveness.</p>
+                                </div>
+                            </div>
+                        </div>
+               	</div>
+               </div>
+      		</div> 
+
+	  <div class="col col-sm-9">
+     <div class="panel">
 	<div class="list-group">
 		<a data-ng-repeat="article in articles" data-ng-href="#!/articles/{{article._id}}" class="list-group-item">
-			<h3 class="list-group-item-heading proposalHeading" data-ng-bind="article.proposalName"></h4><br />
-			<h5 class="list-group-item-heading" data-ng-bind="article.sponsorName"></h4><br />
-			<p class="list-group-item-text" data-ng-bind="article.govLevel"></p><br />
+			<h3>Title: <class="list-group-item-heading proposalHeading" data-ng-bind= "article.proposalName"></h3>
+			<hr />
+			<span><p>Sponsor(s): <class="list-group-item-heading" data-ng-bind="article.sponsorName"></p>
+			<span><p>Level of Government: <class="list-group-item-text" data-ng-bind="article.govLevel"></p>
+			<span><p>Proposal Summary: </p>
 			<p class="list-group-item-text" data-ng-bind="article.summary | limitTo:600"></p>
 		        <p></p>
 		        <p>
@@ -15,11 +59,18 @@
 		          | <i class="icon-comment"></i> <i>3 Comments</i>
 		          | <i class="icon-share"></i> <i>39 Shares</i>
 		        </p>
-		      </div>
-		    </div>
+		   <!--   </div>
+		    </div> -->
 				</a>
-			</div>
+			<!-- </div> -->
 	<div class="alert alert-warning text-center" data-ng-if="articles.$resolved && !articles.length">
 		No articles yet, why don't you <a href="/#!/articles/create">create one</a>?
 	</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
 </section>
