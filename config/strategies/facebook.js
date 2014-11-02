@@ -12,9 +12,9 @@ var passport = require('passport'),
 module.exports = function() {
 	// Use facebook strategy
 	passport.use(new FacebookStrategy({
-			clientID: config.facebook.clientID,
-			clientSecret: config.facebook.clientSecret,
-			callbackURL: config.facebook.callbackURL,
+			clientID: "712314772184344",
+			clientSecret: "17bcaa2b74af13e907ccfed6b529875d",
+			callbackURL: "http://localhost:3000/auth/facebook/callback",
 			passReqToCallback: true
 		},
 		function(req, accessToken, refreshToken, profile, done) {
